@@ -1,0 +1,6 @@
+all:
+	gcc -c msocket.c -o msocket.o
+	ar rcs libmsocket.a msocket.o
+	
+clean:
+	-rm -f msocket.o libmsocket.a

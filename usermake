@@ -1,0 +1,6 @@
+all: user1.c user2.c libmsocket.a
+	gcc user1.c -o user1 -L. -lmsocket
+	gcc user2.c -o user2 -L. -lmsocket
+
+clean:
+	-rm -f user1 user2 user2.txt
